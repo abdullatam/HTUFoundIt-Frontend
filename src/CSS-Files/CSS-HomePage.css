@@ -1,0 +1,491 @@
+/* ======  GLOBAL  ====== */
+.home-page{
+  margin:0;
+  padding:0;
+  font-family:Poppins, sans-serif;
+  color:#1e1e1e;
+}
+
+/* ======  HERO  ====== */
+.hero            { position:cover; min-height:90vh; background-size:cover;
+                   background-position:center; display:flex; flex-direction:column; }
+.hero::before    { content:""; position:absolute; inset:0;
+                   backdrop-filter:brightness(.75); }
+.hero-overlay    { position:relative; z-index:1; display:flex;
+                   justify-content:center; align-items:center; height:100%;
+                   padding:0; }
+
+.hero-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem; /* Reduced from 15px to bring elements closer */
+  padding: 2rem;
+  border-radius: 10px;
+  position: relative;
+}
+
+.hero-logo       { width:100%; max-width:600px; margin:-65px auto 1rem;
+                   filter:drop-shadow(0 4px 4px rgba(0,0,0,.2)); }
+/* Update the hero tagline margins */
+.hero-tagline {
+    font-size: 1.9rem;
+    font-weight: 700;
+    margin: -200px 0 2.7rem; /* Changed from -290px to -200px to move it down */
+    text-shadow: 0 2.3px #e8343f;
+    color: #ffffff;
+}
+/* button is actually a <Link> */
+.hero-cta {
+  display: inline-block;
+  background: #e8343f;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 0.8rem 2.3rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  z-index: 5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hero-cta:hover {
+  background: #d62839;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hero-cta1 {
+  display: inline-block;
+  background: transparent;
+  color: #fff;
+  border: 2px solid #e8343f;
+  padding: 0.8rem 2.3rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  z-index: 5;
+  margin-left: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hero-cta1:hover {
+  background: #e8343f;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hero-cta-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 50px; /* This will push the buttons down */
+  z-index: 10;
+}
+
+.features-section {
+  background: #fff;
+  padding: 4rem 1rem;
+}
+
+
+.features-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto 4px 1fr;
+  gap: 3rem;
+  align-items: start;
+  padding: 2rem;
+}
+
+.features-icons img { width:100%; max-width:200px; display:block; margin:0 auto; }
+
+.features-line      { width:19px; height:100%; object-fit:contain; margin-left: -30px; }
+
+.features-copy h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0 0 1.5rem;
+  color: #1e1e1e;
+  /* Remove the span structure and let text flow naturally */
+}
+
+.features-copy p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+}
+.features-copy {
+    margin-top: 100px; /* Add top margin to move content down */
+}
+.features-image img { width:100%; max-width:300px; display:block; margin-left:auto; }
+
+/* keep header squares above hero blur */
+.header-section     { position:relative; z-index:10; }
+
+/* ─────────  HOW IT WORKS  ───────── */
+.how-section {
+  padding: 4rem 1rem;
+}
+
+.how-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  gap: 1rem; /* Adjust this gap if needed */
+  align-items: flex-start;
+  position: relative;
+}
+
+/* The Red Bar */
+.how-bar {
+  width: 4px;
+  background: #e8343f;
+  position: absolute;
+  left: 0; /* Sticks the red bar to the left */
+  height: 100%;
+  
+}
+
+/* Text Content Aligned */
+.how-text {
+  margin-left: 20px; /* Adjusts the text to align perfectly */
+  max-width: 700px;
+
+}
+
+.how-text h3 {
+   font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.how-text ol {
+   margin: 0;
+  padding-left: 1.25rem;
+  list-style: decimal;
+  list-style-position: inside;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* Align the How Image */
+.how-art {
+  position: relative;
+}
+
+.how-art img {
+  width: 250px;
+  display: block;
+  margin-left: auto;
+}
+.how-squares .sq  { position: absolute; background:#e8343f; }
+.sq‑1             { width:110px;height:110px; top:-70px; right:-70px; }
+.sq‑2             { width:110px;height:110px; top: 40px; right:-180px; }
+
+/* ─────────  ABOUT  ───────── */
+.about-section {
+  padding: 4rem 1rem 6rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  gap: 2.5rem;
+}
+.about-squares {
+  position: relative; width: 200px; height: 200px;
+}
+.about-squares .sq { position:absolute; background:#e8343f; }
+.sq‑big   { width:140px;height:140px; bottom:0; left:0; }
+.sq‑small { width:140px;height:140px; top:0; left:0px; }
+
+.about-copy h3        { margin:0; font-size:1.8rem; line-height:1.25; }
+.about-copy .accent   { color:#e8343f; }
+.about-underline      { display:block; margin:.3rem 0 1rem; }
+.about-copy p         { margin:0; font-size:1rem; line-height:1.6; }
+
+/* keep header squares above anything */
+.header-section { position: relative; z-index: 10; }
+
+
+
+
+
+/* ============================================================
+   FEATURES  (re‑styled)
+   ============================================================ */
+   .features-section      { background:#fff; padding:4rem 1rem; }
+
+ .features-wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto 4px 1fr;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+   .features-icons img    { display:block; width:450px; max-width:1000px;
+                            margin:0 auto; }
+   
+   .features-bar img      { display:block; width:4px; height:100%; }
+   
+   .features-copy h2             { font-size:2.5rem; line-height:1.3; margin:0 0 rem; margin-right: 100px;}
+
+   .features-copy h2.two‑line span{
+    display:block;          /* puts the two sentences on separate rows   */
+    white-space:nowrap;     /* prevents them from wrapping mid‑sentence  */
+  }   
+
+  .features-copy h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0 0 1.5rem;
+    color: #1e1e1e;
+}
+   .features-copy p       { font-size:1rem; line-height:1.6; margin:0; }
+   
+
+   .how-section        { background:#fff; padding:4rem 1rem; }
+.how-wrapper        { max-width:1150px; margin:0 auto; display:flex;
+                      align-items:center; gap:3rem; }
+.how-bar            { width:4px; background:#e8343f; flex-shrink:0; }
+.how-text h3        { margin:0 0 1rem; font-size:2.2rem; }
+.how-text ol        { margin:0; padding-left:1.25rem; font-size:1.25rem;
+                      line-height:2.2rem; }
+.how-art            { position:relative; }
+.how-art img        { width:330px; display:block; }
+.sq                 { position:absolute; width:120px; height:120px;
+                      background:#e8343f; }
+.sq-top             { top:-60px; right:-160px; }
+.sq-btm             { top:60px;  right:-280px; }
+
+
+
+
+/* ==========================================================
+   ABOUT  (wallet / magnifier version)
+   ========================================================== */
+   .aboutWallet-section        { background:#fff; padding:4rem 1rem; }
+   .aboutWallet-wrap           { max-width:1200px; margin:0 auto; display:flex;
+                                 align-items:center; gap:3rem; }
+   
+   /* — illustration — */
+   .aboutWallet-art            { position:relative; flex:0 0 320px; }
+   .aboutWallet-art img        { width:100%; max-width:320px; display:block; }
+
+   .aw-sq‑1                    { top:0;   right:350px; }
+   .aw-sq‑2                    { top:75px; right:350px; }
+   .aw-sq‑3                    { top:155px; right:350px; }
+   .aw-sq‑4                    { top:200px; right:350px; }
+
+
+   
+   /* — text — */
+   .aboutWallet-copy h3        { margin:0; font-size:2rem; line-height:1.25; }
+   .accent-red                 { color:#e8343f; }
+   
+   .aw-underline               { display:block; margin:.4rem 0 2rem; margin-left: 95px; margin-top: -3px; }
+   
+   .aboutWallet-copy p         { margin:0; font-size:1.3rem; line-height:1.6; }
+
+
+   /* full‑width silver rectangle at the bottom of the hero */
+.hero-silverBar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 55px;                 /* adjust thickness if desired */
+  background: rgba(190, 190, 190, 0.85);  /* soft silver tone */
+  z-index: 2;                   /* keeps it above the dark overlay */
+}
+
+
+
+/* Add these media queries at the end of your CSS file */
+
+/* Tablet and smaller desktop screens */
+@media screen and (max-width: 1024px) {
+  .hero-logo {
+    max-width: 500px;
+    margin: -80px auto 1rem;
+  }
+
+  .hero-tagline {
+    font-size: 1.6rem;
+    margin: -150px 0 2rem;
+  }
+
+  .features-container {
+    grid-template-columns: 1fr 4px 2fr;
+    padding: 0 2rem;
+  }
+
+  .how-wrapper {
+    max-width: 90%;
+    padding: 0 2rem;
+  }
+
+  .aboutWallet-wrap {
+    max-width: 90%;
+    padding: 0 2rem;
+  }
+}
+
+/* Medium sized tablets */
+@media screen and (max-width: 768px) {
+   .hero-logo {
+    max-width: 400px;
+    margin: -40px auto 1rem; /* Reduced negative margin to move logo down */
+  }
+  .hero-tagline {
+    font-size: 1.4rem;
+    margin: -120px 0 1.5rem;
+  }
+
+  .features-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .features-line {
+    display: none;
+  }
+
+  .features-copy h2 {
+    font-size: 1.8rem;
+    margin-right: 0;
+  }
+
+  .how-wrapper {
+    flex-direction: column;
+  }
+
+  .how-bar {
+    width: 100%;
+    height: 4px;
+    position: relative;
+    margin: 1rem 0;
+  }
+
+  .how-text {
+    margin-left: 0;
+  }
+
+  .how-art {
+    margin: 2rem auto;
+  }
+
+  .aboutWallet-wrap {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .aboutWallet-art {
+    margin: 0 auto;
+  }
+
+  .aw-underline {
+    margin: 0.4rem auto 2rem;
+  }
+}
+
+/* Mobile devices */
+@media screen and (max-width: 480px) {
+   .hero-logo {
+    max-width: 300px;
+    margin: -30px auto 1rem; /* Reduced negative margin further for smaller screens */
+  }
+
+  .hero-tagline {
+    font-size: 1.2rem;
+    margin: -100px 0 1rem;
+  }
+
+  .hero-cta {
+    padding: 0.6rem 1.8rem;
+    font-size: 0.9rem;
+  }
+
+  .features-icons img {
+    max-width: 150px;
+  }
+
+  .features-copy h2 {
+    font-size: 1.5rem;
+  }
+
+  .features-copy p {
+    font-size: 0.9rem;
+  }
+
+  .how-text h3 {
+    font-size: 1.5rem;
+  }
+
+  .how-text ol {
+    font-size: 1rem;
+    line-height: 1.8rem;
+  }
+
+  .how-art img {
+    width: 200px;
+  }
+
+  .sq {
+    width: 80px;
+    height: 80px;
+  }
+
+  .aboutWallet-art img {
+    max-width: 250px;
+  }
+
+  .aboutWallet-copy h3 {
+    font-size: 1.5rem;
+  }
+
+  .aboutWallet-copy p {
+    font-size: 1rem;
+  }
+
+  .hero-silverBar {
+    height: 40px;
+  }
+}
+
+/* Small mobile devices */
+@media screen and (max-width: 320px) {
+  .hero-logo {
+    max-width: 250px;
+  }
+
+  .hero-tagline {
+    font-size: 1rem;
+  }
+
+  .hero-cta {
+    padding: 0.5rem 1.5rem;
+    font-size: 0.8rem;
+  }
+
+  .features-copy h2 {
+    font-size: 1.3rem;
+  }
+
+  .how-art img {
+    width: 180px;
+  }
+}
+
+   
