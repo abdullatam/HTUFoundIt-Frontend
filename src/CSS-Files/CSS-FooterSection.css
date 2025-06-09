@@ -1,0 +1,108 @@
+/* --- FOOTER SECTION --- */
+.footer-section {
+  width: 100%;
+  background-color: #e8343f;
+  color: #fff;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+/* Left Side - Logo and Contacts */
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
+}
+
+.footer-logo-text {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-logo {
+  height: 50px;
+}
+
+.footer-tagline {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+/* Contacts List */
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.contact-item img {
+  width: 18px;
+  height: 18px;
+}
+
+.contact-item a {
+  color: #fff;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+.contact-item a:hover {
+  color: #f5f5f5;
+}
+
+/* Right Side - Copyright */
+.footer-right {
+  font-size: 0.9rem;
+  align-self: flex-end;
+  text-align: right;
+  flex: 1;
+}
+
+/* --- RESPONSIVE DESIGN --- */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-left {
+    align-items: center;
+  }
+
+  .footer-right {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-tagline {
+    font-size: 1.2rem;
+  }
+
+  .contact-item {
+    font-size: 0.85rem;
+  }
+
+  .footer-right {
+    font-size: 0.85rem;
+  }
+}
