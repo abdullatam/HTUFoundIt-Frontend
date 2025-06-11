@@ -1,0 +1,105 @@
+/* CSS-AdminSettings.css */
+
+.admin-settings-page {
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+background-image: url('../assets/campuses-thumb.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;}
+
+.settings-content {
+  flex-grow: 1;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0);
+  margin-left: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.settings-card {
+  background-color: #ffffff;
+  padding: 25px 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  border: 1.5px solid #e8343f;
+}
+
+.settings-card h2 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  text-align: center;
+  color: #333;
+}
+
+.settings-card p {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.settings-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.settings-form label {
+  font-size: 14px;
+  color: #444;
+  font-weight: 500;
+}
+
+.settings-form input {
+  padding: 10px 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.settings-form input:focus {
+  border-color: #e8343f;
+}
+
+.update-button {
+  background-color: #e8343f;
+  color: #fff;
+  border: none;
+  padding: 10px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.update-button:hover {
+  background-color: #d02e2e;
+}
+
+.logout-button {
+  background-color: transparent;
+  color: #e8343f;
+  border: 2px solid #e8343f;
+  padding: 10px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 15px;
+  transition: background 0.3s, color 0.3s;
+  width: 100%;
+}
+
+.logout-button:hover {
+  background-color: #e8343f;
+  color: #fff;
+}

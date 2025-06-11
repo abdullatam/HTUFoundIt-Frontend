@@ -1,0 +1,82 @@
+.admin-recent-requests {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: rgba(245, 245, 245, 0.85);
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header-search {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.search-input,
+.filter-button {
+  padding: 10px 15px;
+  border: 2px solid #e8343f;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #ffffff;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+.request-card {
+  background-color: #ffffff;
+  border: 2px solid #e8343f;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.request-card-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.request-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.request-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.request-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #e8343f;
+}
+
+.request-description {
+  font-size: 16px;
+  color: #e8343f;
+  margin: 10px 0;
+}
+
+.request-image {
+  width: 100%;
+  border-radius: 8px;
+  margin: 15px 0;
+}
+
+.request-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #666666;
+}
+
+
