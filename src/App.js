@@ -22,7 +22,6 @@ import NotFound from "./Components/NotFound";
 import SubmitSuccessPage from "./Pages/SubmitSuccessPage";
 
 
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   const { isLoading } = useAuth0();
